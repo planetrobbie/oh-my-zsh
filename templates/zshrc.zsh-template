@@ -42,7 +42,7 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER="brauns"
 
 # Setup Solarized color theme for LS_COLORS
-[[ -s "$HOME/.dircolors]] && eval `/usr/bin/dircolors ~/.dircolors`
+[[ -s "$HOME/.dircolors"]] && eval `/usr/bin/dircolors ~/.dircolors`
 
 # Load RVM into a shell session as a function
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
