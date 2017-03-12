@@ -46,3 +46,9 @@ DEFAULT_USER="brauns"
 
 # Load RVM into a shell session as a function
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Register last cmd into Pet (cf. https://github.com/knqyf263/pet)
+function prev() {
+  PREV=$(fc -lrn | head -n 1)
+  sh -c "pet new `printf %q "$PREV"`"
+}
